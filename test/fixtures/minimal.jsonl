@@ -1,0 +1,9 @@
+{"type":"permission-mode","permissionMode":"default","sessionId":"fixture-1"}
+{"type":"user","timestamp":"2026-07-13T10:00:00.000Z","sessionId":"fixture-1","message":{"role":"user","content":"<local-command-caveat>slash command echo</local-command-caveat>"}}
+{"type":"user","timestamp":"2026-07-13T10:00:05.000Z","sessionId":"fixture-1","message":{"role":"user","content":"add a login route to auth.ts"}}
+{"type":"assistant","timestamp":"2026-07-13T10:00:07.000Z","sessionId":"fixture-1","message":{"role":"assistant","content":[{"type":"text","text":"Opening the file."},{"type":"tool_use","id":"toolu_1","name":"Read","input":{"file_path":"C:\\repo\\auth.ts"}}],"usage":{"input_tokens":1000,"output_tokens":50,"cache_read_input_tokens":500}}}
+this line is malformed and should be skipped without crashing
+{"type":"assistant","timestamp":"2026-07-13T10:00:09.000Z","sessionId":"fixture-1","message":{"role":"assistant","content":[{"type":"text","text":"Now editing."},{"type":"tool_use","id":"toolu_2","name":"Edit","input":{"file_path":"C:\\repo\\auth.ts","old_string":"a","new_string":"b"}}],"usage":{"input_tokens":1200,"output_tokens":80,"cache_creation_input_tokens":200}}}
+{"type":"user","timestamp":"2026-07-13T10:00:20.000Z","sessionId":"fixture-1","message":{"role":"user","content":[{"type":"text","text":"also update middleware.ts"}]}}
+{"type":"assistant","timestamp":"2026-07-13T10:00:22.000Z","sessionId":"fixture-1","message":{"role":"assistant","content":[{"type":"tool_use","id":"toolu_3","name":"Edit","input":{"file_path":"C:\\repo\\middleware.ts","old_string":"x","new_string":"y"}}],"usage":{"input_tokens":1500,"output_tokens":30}}}
+{"type":"file-history-snapshot","messageId":"m1","snapshot":{},"isSnapshotUpdate":false}

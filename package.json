@@ -1,0 +1,22 @@
+{
+  "name": "watchduck",
+  "version": "0.0.1",
+  "description": "Local, read-only observability for Claude Code sessions. Show, don't judge.",
+  "type": "module",
+  "bin": {
+    "watchduck": "./src/cli.ts"
+  },
+  "scripts": {
+    "brief": "node --experimental-strip-types src/cli.ts brief",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}
